@@ -1,7 +1,7 @@
 ## Environment
 python: 3.10.10
 
-## Install dependencies
+## Setup
 ```bash
 pip install x-transformers numpy omegaconf wandb tqdm
 ```
