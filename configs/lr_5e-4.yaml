@@ -1,0 +1,4 @@
+wandb:
+  name: "lr_5e-4"
+train:
+  lr: 5e-4

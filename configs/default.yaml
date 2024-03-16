@@ -1,0 +1,28 @@
+wandb:
+    project: "template"
+    use: False
+data:
+    data_dir: "./dataset_demo" # change to your dataset path
+    train_file: "train.pt"
+    eval_file: "eval.pt"
+    test_file: "test.pt"
+model:
+    dim: 512
+    depth: 6
+    heads: 8
+    num_tokens: 10000
+    max_seq_len: 1024
+    dropout: 0.1
+    ff_inner_dim: 2048
+train:
+    max_steps: 100
+    eval_steps: 50
+    num_workers: 12
+    warmup_steps: 15
+    decay_end_steps: 100
+    decay_end_multiplier: 0.1
+    early_stopping_patience: 3
+    batch_size: 8
+    accumulation_steps: 2  # real batch size = batch_size * accumulation_steps
+save_dir: "/n/work3/inaba/models/trained/template"
+save_model: True
